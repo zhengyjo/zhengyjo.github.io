@@ -3,10 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Your Name - Personal Website</title>
+  <style>
+    /* ==== Reset & Base Styles ==== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+
+    /* ==== Layout ==== */
+    header { background: #f4f4f4; padding: 1rem 2rem; position: sticky; top: 0; border-bottom: 1px solid #ddd; }
+    nav ul { display: flex; list-style: none; justify-content: flex-end; }
+    nav li { margin-left: 1.5rem; }
+
+    .container { width: 90%; max-width: 1000px; margin: 2rem auto; }
+
+    /* ==== Hero ==== */
+    .hero { text-align: center; padding: 4rem 1rem; }
+    .hero img { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.2rem; color: #555; }
+
+    /* ==== Sections ==== */
+    section { margin-bottom: 4rem; }
+    section h2 { font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #0366d6; display: inline-block; }
+
+    /* ==== Projects Grid ==== */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .project-card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; transition: transform 0.2s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card h3 { margin-bottom: 0.5rem; }
+
+    /* ==== Contact ==== */
+    .contact-list { list-style: none; }
+    .contact-list li { margin-bottom: 0.5rem; }
+
+    /* ==== Footer ==== */
+    footer { text-align: center; padding: 1rem 0; border-top: 1px solid #ddd; font-size: 0.9rem; color: #666; }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Your Name!</h1>
-  <p>Welcome to my personal homepage.</p>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="container">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero container">
+    <img src="https://via.placeholder.com/150" alt="Your Name">
+    <h1>Your Name</h1>
+    <p>PhD Researcher | Fairness in ML | Contrative Learning | Healthcare & Molecular Analysis</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Your Name</strong>, a PhD researcher at Brigham and Women's Hospital & Harvard Medical School, and Brandeis University. My work focuses on fairness in machine learning, contrastive learning techniques, and their applications in healthcare and molecular analysis.</p>
+    <p>In my research, I explore innovative methods to ensure models are both accurate and equitable, developing novel algorithms that bridge domains and datasets.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Active Nematics Forecasting</h3>
+        <p>Data-driven forecasting of active nematics using deep learning models.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="project-card">
+        <h3>K3MAID: 13C NMR Peak Assignment</h3>
+        <p>Multimodal alignment framework for isomer recognition in 13C NMR spectroscopy.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="project-card">
+        <h3>MMFRL: Molecular Property Prediction</h3>
+        <p>Multimodal fusion and relational learning for accurate molecular property prediction.</p>
+        <a href="#">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/your-username">@your-username</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/your-linkedin">Your Name</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Your Name. Built with HTML & CSS.
+  </footer>
 </body>
 </html>
